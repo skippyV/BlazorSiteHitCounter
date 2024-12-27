@@ -1,0 +1,12 @@
+﻿@page "/"
+
+@inject ICircuitUserService UserService
+@inject CircuitHandler MyCircuitHandler
+
+<PageTitle>Home</PageTitle>
+
+<br />
+<h4>@MyUserId</h4>
+<div>@MyCircuitMessage</div>
+<div>There are @UserService.Circuits.Count users connected.</div>
+<div>@MyRemovedMessage</div>
